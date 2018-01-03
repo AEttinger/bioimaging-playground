@@ -1,4 +1,1 @@
 description: "My exploration of tools for image processing and analysis."
-defaults:
- - scope:
-   path: "../"
