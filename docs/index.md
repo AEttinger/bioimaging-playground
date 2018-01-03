@@ -1,4 +1,4 @@
 ---
 ---
 
-{% include_relative ../ %}
+{% include_relative ../main.ipynb %}
