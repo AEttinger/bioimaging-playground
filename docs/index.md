@@ -4,6 +4,5 @@ description: "A (more or less) random collection of scripts and macros."
 ---
 
 {% for note in site.html_pages %}
-  {{ note.name }}
   {{ note.content }}
 {% endfor %}
