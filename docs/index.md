@@ -2,7 +2,6 @@
 title: "Bioimaging playground"
 description: "A (more or less) random collection of scripts and macros."
 ---
-
-{% for note in site.html_pages %}
-  {{ note.content }}
-{% endfor %}
+<div class="embed-responsive">
+  <iframe class="embd-responsive-item" source="{{'test.html' | prepend: site.baseurl }}"></iframe>
+</div>
