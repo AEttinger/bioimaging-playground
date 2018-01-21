@@ -8,7 +8,7 @@ description: "A (more or less) random collection of scripts and macros."
   <div class="row">
     <div class="col-sm-10 blog-main">  
       <div class="embed-responsive embed-responsive-16by9">
-      <iframe class="embed-responsive-item" src="https://aettinger.github.io" name="notebook"><p>Iframe not supported.</p></iframe>
+      <iframe class="embed-responsive-item" src="https://aettinger.github.io/bioimaging-playground/test.html" name="notebook"><p>Iframe not supported.</p></iframe>
       </div>
     </div>
   <aside class="col-sm-2 ml-sm-auto blog-sidebar">
