@@ -2,10 +2,6 @@
 title: "Bioimaging playground"
 description: "A (more or less) random collection of scripts and macros."
 ---
-{% assign html_notebooks = site.notebooks %}
-{% assign fiji = site.fiji %}
-{% assign r = site.r %}
-
 <main role="main" class="container">
   <div class="row">
     <div class="col-sm-10 blog-main">  
@@ -17,7 +13,7 @@ description: "A (more or less) random collection of scripts and macros."
     <div class="sidebar-module">
       <h4>Jupyter Notebooks</h4>
       <ol class="list-unstyled">
-        {% for notebook in html_notebooks %}
+        {% for notebook in site.notebooks %}
           <li><a href="{{ notebook.path }}" target="code_frame">{{ notebook.title | capitalize }}</a></li>
         {% endfor %}
       </ol>
@@ -25,16 +21,16 @@ description: "A (more or less) random collection of scripts and macros."
     <div class="sidebar-module">
       <h4>Fiji</h4>
       <ol class="list-unstyled">
-        {% for item in fiji %}
-          <li><a href="{{ item.path }}" target="code_frame">{{ item.name | capitalize }}</a></li>
+        {% for f in site.fiji %}
+          <li><a href="{{ f.path }}" target="code_frame">{{ f.title | capitalize }}</a></li>
         {% endfor %}
       </ol>
     </div>
     <div class="sidebar-module">
       <h4>R</h4>
       <ol class="list-unstyled">
-        {% for rscript in r %}
-          <li><a href="{{ rscript.path }}" target="code_frame">{{ rscript.name | capitalize }}</a></li>
+        {% for rscript in site.r %}
+          <li><a href="{{ rscript.path }}" target="code_frame">{{ rscript.title | capitalize }}</a></li>
         {% endfor %}
       </ol>
     </div>
