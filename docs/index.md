@@ -16,7 +16,7 @@ description: "A (more or less) random collection of scripts and macros."
       <h4>Jupyter Notebooks</h4>
       <ol class="list-unstyled">
         {% for item in html_notebooks %}
-          <li><a href="{{ item.url | prepend: repository.name+"/" | prepend: site.url+"/" }}" target="notebook">{{item.title | capitalize }}</a></li>
+          <li><a href="{{ item.path }}" target="notebook">{{item.name | capitalize }}</a></li>
         {% endfor %}
       </ol>
     </div>
