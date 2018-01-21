@@ -3,9 +3,9 @@ collections:
 - notebooks
 - r
 - fiji
-  notebooks:
-    output: true
-  r:
-    output: true
-  fiji:
-    output: true
+notebooks:
+  output: true
+r:
+  output: true
+fiji:
+  output: true
