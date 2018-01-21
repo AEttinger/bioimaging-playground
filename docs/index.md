@@ -14,7 +14,7 @@ description: "A (more or less) random collection of scripts and macros."
       <h4>Jupyter Notebooks</h4>
       <ol class="list-unstyled">
         {% for notebook in site.notebooks %}
-          <li><a href="{{ notebook.url }}" target="code_frame">{{ notebook.title | capitalize }}</a></li>
+          <li><a href="{{ notebook.url | prepend: site.url }}" target="code_frame">{{ notebook.title | capitalize }}</a></li>
         {% endfor %}
       </ol>
     </div>
@@ -22,7 +22,7 @@ description: "A (more or less) random collection of scripts and macros."
       <h4>Fiji</h4>
       <ol class="list-unstyled">
         {% for f in site.fiji %}
-          <li><a href="{{ f.url }}" target="code_frame">{{ f.title | capitalize }}</a></li>
+          <li><a href="{{ f.url | prepend: site.url }}" target="code_frame">{{ f.title | capitalize }}</a></li>
         {% endfor %}
       </ol>
     </div>
@@ -30,7 +30,7 @@ description: "A (more or less) random collection of scripts and macros."
       <h4>R</h4>
       <ol class="list-unstyled">
         {% for rscript in site.r %}
-          <li><a href="{{ rscript.url }}" target="code_frame">{{ rscript.title | capitalize }}</a></li>
+          <li><a href="{{ rscript.url | prepend: site.url }}" target="code_frame">{{ rscript.title | capitalize }}</a></li>
         {% endfor %}
       </ol>
     </div>
