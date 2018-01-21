@@ -1,5 +1,5 @@
 description: "My exploration of tools for image processing and analysis."
 collections:
 - notebooks
-- python-scripts
+- r
 - imagej-scripts
