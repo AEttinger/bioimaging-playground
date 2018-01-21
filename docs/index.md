@@ -2,6 +2,9 @@
 title: "Bioimaging playground"
 description: "A (more or less) random collection of scripts and macros."
 ---
+{% assign html_notebooks = site.pages %}
+{% for item in html_notebooks %}
 <div class="embed-responsive">
-  <iframe class="embed-responsive-item" source="{{'test.html' | prepend: site.baseurl }}"></iframe>
+  <iframe class="embed-responsive-item" source="{{ item.url | prepend: site.baseurl }}"></iframe>
 </div>
+{% endfor %}
