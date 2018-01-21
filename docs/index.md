@@ -10,15 +10,15 @@ description: "A (more or less) random collection of scripts and macros."
   <div class="row">
     <div class="col-sm-10 blog-main">  
       <div class="embed-responsive embed-responsive-16by9">
-      <iframe class="embed-responsive-item" src="https://aettinger.github.io/bioimaging-playground/test.html" name="notebook"><p>Iframe not supported.</p></iframe>
+      <iframe class="embed-responsive-item" src="https://aettinger.github.io/bioimaging-playground/test.html" name="code_frame"><p>Iframe not supported.</p></iframe>
       </div>
     </div>
   <aside class="col-sm-2 ml-sm-auto blog-sidebar">
     <div class="sidebar-module">
       <h4>Jupyter Notebooks</h4>
       <ol class="list-unstyled">
-        {% for item in html_notebooks %}
-          <li><a href="{{ item.path }}" target="notebook">{{item.name | capitalize }}</a></li>
+        {% for notebook in html_notebooks %}
+          <li><a href="{{ notebook.path }}" target="code_frame">{{ notebook.name | capitalize }}</a></li>
         {% endfor %}
       </ol>
     </div>
@@ -26,15 +26,15 @@ description: "A (more or less) random collection of scripts and macros."
       <h4>Fiji</h4>
       <ol class="list-unstyled">
         {% for item in fiji %}
-          <li><a href="{{ item.path }}" target="notebook">{{item.name | capitalize }}</a></li>
+          <li><a href="{{ item.path }}" target="code_frame">{{ item.name | capitalize }}</a></li>
         {% endfor %}
       </ol>
     </div>
     <div class="sidebar-module">
       <h4>R</h4>
       <ol class="list-unstyled">
-        {% for item in r %}
-          <li><a href="{{ item.path }}" target="notebook">{{item.name | capitalize }}</a></li>
+        {% for rscript in r %}
+          <li><a href="{{ rscript.path }}" target="code_frame">{{ rscript.name | capitalize }}</a></li>
         {% endfor %}
       </ol>
     </div>
