@@ -3,6 +3,7 @@ title: "Bioimaging playground"
 description: "A (more or less) random collection of scripts and macros."
 ---
 {% assign html_notebooks = site.notebooks %}
+{% assign fiji = site.fiji %}
 
 <main role="main" class="container">
   <div class="row">
@@ -16,6 +17,14 @@ description: "A (more or less) random collection of scripts and macros."
       <h4>Jupyter Notebooks</h4>
       <ol class="list-unstyled">
         {% for item in html_notebooks %}
+          <li><a href="{{ item.path }}" target="notebook">{{item.name | capitalize }}</a></li>
+        {% endfor %}
+      </ol>
+    </div>
+    <div class="sidebar-module">
+      <h4>Fiji</h4>
+      <ol class="list-unstyled">
+        {% for item in fiji %}
           <li><a href="{{ item.path }}" target="notebook">{{item.name | capitalize }}</a></li>
         {% endfor %}
       </ol>
