@@ -2,4 +2,11 @@ description: "My exploration of tools for image processing and analysis."
 collections:
 - notebooks
 - r
-- imagej-scripts
+- fiji
+  notebooks:
+    output: true
+  r:
+    output: true
+  fiji:
+    output: true
+  
