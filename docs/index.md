@@ -2,7 +2,7 @@
 title: "Bioimaging playground"
 description: "A (more or less) random collection of scripts and macros."
 ---
-{% assign html_notebooks = site.html_files %}
+{% assign html_notebooks = site.html_pages %}
 
 <main role="main" class="container">
   <div class="row">
