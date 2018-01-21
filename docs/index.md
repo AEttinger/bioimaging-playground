@@ -12,12 +12,12 @@ description: "A (more or less) random collection of scripts and macros."
       </div>
     </div>
   <aside class="col-sm-3 ml-sm-auto blog-sidebar">
-    <div class="sidebar-module sidebar-module-inset">
+    <div class="sidebar-module sidebar-module-inset"> Explore
     </div>
     <div class="sidebar-module">
       <ol class="list-unstyled">
         {% for item in html_notebooks %}
-          <li><a href="{{ item.url | prepend: site.url }}" target="notebook">{{item.title | capitalize }}</a></li>
+          <li><a href="{{ item.url | prepend: page.url }}" target="notebook">{{item.title | capitalize }}</a></li>
         {% endfor %}
       </ol>
     </div>
