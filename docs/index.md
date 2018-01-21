@@ -7,7 +7,7 @@ description: "A (more or less) random collection of scripts and macros."
 <main role="main" class="container">
   <div class="row">
     <div class="col-sm-8 blog-main">  
-      <div class="embed-responsive">
+      <div class="embed-responsive embed-responsive-16by9">
       <iframe class="embed-responsive-item" src="https://aettinger.github.io" name="notebook"><p>Ifame not supported.</p></iframe>
       </div>
     </div>
