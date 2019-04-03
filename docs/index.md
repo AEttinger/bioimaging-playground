@@ -4,7 +4,7 @@ description: "A (more or less) random collection of scripts and macros."
 ---
 {% for repository in site.public_repositories %}
 {{repository}}
-{% endif %}
+{% endfor %}
 
 
 <main role="main" class="container">
