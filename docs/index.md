@@ -2,11 +2,6 @@
 title: "Bioimaging playground"
 description: "A (more or less) random collection of scripts and macros."
 ---
-{% for repository in site.public_repositories %}
-{{repository}}
-{% endfor %}
-
-
 <main role="main" class="container">
   <div class="row">
     <div class="col-sm-10 blog-main">  
